@@ -12,7 +12,11 @@ h1{
     margin:0 auto;
     border: 5px solid #003049;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* This was used to learn Flex Direction */
+    justify-content: center;/* content becomes centered */
+    justify-content: space-between;/* distributes space between elements but does not go outside the container  */
+    justify-content: space-evenly;/* Spaces elements evenly in in the container */
+    justify-content: end; /* content goes to the end of the container */
 }
 #container div {
     width: 200px;
