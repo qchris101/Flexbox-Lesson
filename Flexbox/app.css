@@ -12,13 +12,37 @@ h1{
     margin:0 auto;
     border: 5px solid #003049;
     display: flex;
-    flex-direction: column; /* This was used to learn Flex Direction */
-    justify-content: center;/* content becomes centered */
-    justify-content: space-between;/* distributes space between elements but does not go outside the container  */
-    justify-content: space-evenly;/* Spaces elements evenly in in the container */
-    justify-content: end; /* content goes to the end of the container */
+    flex-direction: row; /* This was used to learn Flex Direction */
+    /* justify-content: center; *//* content becomes centered */
+    /* justify-content: space-between; *//* distributes space between elements but does not go outside the container  */
+    /* justify-content: space-evenly; *//* Spaces elements evenly in in the container */
+    /* justify-content: end;  *//* content goes to the end of the container */
+    justify-content: center;
+    align-items: flex-start;
+    /* flex-wrap: wrap; */
 }
 #container div {
     width: 200px;
     height: 200px;
+}
+div:nth-of-type(3){
+    flex-grow: 1;
+}
+div:nth-of-type(1){
+    flex-shrink: 4;
+}
+main {
+ width: 80%;
+ margin: 0 auto;
+ border: 5px solid black;
+ height: 500px;
+ display: flex;
+}
+main .sidebar{
+ background-color: aqua;
+ flex:1 350px;
+}
+main .maincontent {
+    background-color: blueviolet;
+    flex:1 600px;
 }
